@@ -21,8 +21,8 @@ monthly_payment = 0.05*flt_purchase_price
 month = 1
 balance = flt_purchase_price - (flt_purchase_price*DOWNPAYMENT_RATE)
 
-print("Month Starting Balance Interest to Pay Principal to Pay Payment "
-      " Ending Balance")
+print("Month Starting Balance Interest to Pay   Principal to Pay    Payment "
+      "     Ending Balance")
 
 while balance > 0:
     if monthly_payment > balance:

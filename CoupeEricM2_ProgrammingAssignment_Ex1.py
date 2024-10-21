@@ -11,6 +11,9 @@ Short Desc:   A program that receives input of primary colors. The input
 
 """
 def primary_color(prompt):
+    """
+    this function creates a loop to make sure a primary color is input
+    """
     while True:
         color = input(prompt)
         if color in ["red", "blue", "yellow"]:
@@ -19,6 +22,10 @@ def primary_color(prompt):
             print("Please enter a primary color (red, blue, or yellow).")
 
 def secondary_colors(color1, color2):
+    """
+    this function combines color options to limit the amount of if 
+    statements
+    """
     if (color1 == "red" and color2 == "blue") or (color1 == "blue" and 
         color2 == "red"):
         return "purple"
